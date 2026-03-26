@@ -1,0 +1,21 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #1f2937; background: #f6f8fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+header.page-header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px; }
+.card { background:#fff; border-radius:16px; padding:20px; box-shadow:0 10px 30px rgba(15,23,42,.08); }
+.grid { display:grid; gap:20px; }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.badge { display:inline-flex; align-items:center; border-radius:999px; padding:6px 12px; font-size:14px; font-weight:600; }
+button { border:none; border-radius:10px; padding:12px 16px; font-weight:600; cursor:pointer; }
+button.primary { background:#111827; color:#fff; }
+button.warning { background:#f59e0b; color:#111827; }
+button.success { background:#10b981; color:#fff; }
+button:disabled { opacity:.5; cursor:not-allowed; }
+input, select { width:100%; border:1px solid #d1d5db; border-radius:10px; padding:12px; }
+ul.clean { list-style:none; padding:0; margin:0; }
+.order-row { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; border-bottom:1px solid #eef2f7; }
+.progress { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.progress-step { border:1px solid #dbe3ee; border-radius:14px; padding:14px; text-align:center; background:#fff; }
+.progress-step.active { border-color:#10b981; background:#ecfdf5; }
+.small { color:#6b7280; font-size:14px; }

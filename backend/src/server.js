@@ -1,0 +1,21 @@
+import 'dotenv/config';
+import http from 'http';
+import express from 'express';
+import cors from 'cors';
+import { Server } from 'socket.io';
+import { connectDb } from './config/db.js';
+import { registerMenuRoutes } from './routes/menuRoutes.js';
+import { registerOrderRoutes } from './routes/orderRoutes.js';
+import { attachSocketHandlers } from './sockets/index.js';
+
+const app = express();
+const server = http.createServer(app);
+const io = new Server(server, { cors: { origin: '*', methods: ['GET', 'POST', 'PATCH'] } });
+app.use(cors());
+app.use(express.json());
+app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
+registerMenuRoutes(app);
+registerOrderRoutes(app, io);
+attachSocketHandlers(io);
+const PORT = process.env.PORT || 4000;
+connectDb().finally(() => server.listen(PORT, () => console.log(`API démarrée sur ${PORT}`)));

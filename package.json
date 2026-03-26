@@ -1,0 +1,13 @@
+{
+  "name": "restaurant-order-system",
+  "private": true,
+  "workspaces": ["backend", "apps/*"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=apps/client-caisse\" \"npm run dev --workspace=apps/cuisinier\" \"npm run dev --workspace=apps/serveur\" \"npm run dev --workspace=apps/suivi-client\"",
+    "build": "npm run build --workspaces",
+    "seed": "node backend/src/scripts/seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
