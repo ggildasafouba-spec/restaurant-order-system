@@ -43,5 +43,5 @@ Créer une application complète simulant un système réel de gestion de restau
 
 ![Interface](./interface.png)
 ![Ajout commande](./interface-cuisine.png)
-![Paiement](./inerface-serveur.png)
+![Paiement](./images/interface-serveur.png)
 
