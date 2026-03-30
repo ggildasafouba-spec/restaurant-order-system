@@ -41,7 +41,7 @@ Créer une application complète simulant un système réel de gestion de restau
 * Dashboard avancé
   ## 📸 Screenshots
 
-![Interface](./capture d'écran 2026-03-27 125144.png)
-![Ajout commande](./capture d'écran 2026-03-27 125245.png)
-![Paiement](./capture d'écran 2026-03-27 125339.png)
+![Interface](./interface.png)
+![Ajout commande](./interface cuisine.png)
+![Paiement](./inerface serveur.png)
 
