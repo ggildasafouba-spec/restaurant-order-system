@@ -39,9 +39,12 @@ Créer une application complète simulant un système réel de gestion de restau
 * Paiement en ligne
 * Notifications
 * Dashboard avancé
-  ## 📸 Screenshots
 
-![Interface](./interface.png)
-![Ajout commande](./interface-cuisine.png)
-![Paiement](./images/interface-serveur.png)
+ ## 📸 Screenshots
+
+![Interface client](./interface.png)
+
+![Interface cuisine](./interface-cuisine.png)
+
+![Interface serveur](./interface-serveur.png)
 
